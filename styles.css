@@ -1,0 +1,118 @@
+/* .dark {
+    body {
+        background: #fff;
+        color: #201d1d ;
+        background-color: #222;
+    }
+} */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #058079;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+body.dark-mode {
+    /* padding: 20px; */
+    background: #fff;
+    color: #201d1d ;
+    background-color: #222;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: #058079;
+    padding: 20px 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    color: #fff;
+}
+
+.card.dark-mode {
+    border-color: #444;
+    background: #058079;
+    color: #f4f4f4;
+}
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.dark-mode {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#fff;
+}
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #058079;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    border-radius: 10px;
+    background: #d3d2d2;
+    color:#058079;
+    border: none;
+    padding: 5px 4px;
+    font-weight: bold ;
+
+}
+
+select {
+    border-radius: 10px;
+    padding: 4px 4px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 4px 4px;
+    width: 300px ;
+    border: 10px;
+}
+
+h2 .h3 .p .label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

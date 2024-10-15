@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <title>Dashboard Simples</title>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Simples</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+                <li><a href="#configuracoes">Configurações</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><button id="darkMode" onclick="toggleDarkMode()">Alternar Modo</button></a></li>
+                <!-- <button id="darkMode" class="btn btn-secondary btn-sm">Alternar Modo</button> -->
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="sectionClass">
+            <h2>Bem-vindo ao Dashboard</h2>
+            <p>Mais acessados</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Usuários Ativos</h3>
+                    <p>150</p>
+                </div>
+                <div class="card">
+                    <h3>Vendas Hoje</h3>
+                    <p>30</p>
+                </div>
+                <div class="card">
+                    <h3>Feedbacks Recebidos</h3>
+                    <p>12</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="relatorios" class="sectionClass">
+            <h2>Relatórios</h2>
+            <p>Selecione um relatório para visualizar:</p>
+            <select>
+                <option value="">Selecione...</option>
+                <option value="Vendas">Vendas</option>
+                <option value="Usuários">Usuários</option>
+            </select >
+            <button id="relButton" type="button">Gerar Relatório</button>
+            <button id="cancelButton" type="button">Cancelar</button>
+            <div class="report-output">
+                <!-- Saída do relatório aparecerá aqui -->
+            </div>
+        </section>
+        <section id="configuracoes" class="sectionClass">
+            <h2>Configurações</h2>
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <button type="submit" type="button" ">Salvar Configurações</button>
+            </form>
+        </section>
+
+        <section id="perfil" class="sectionClass">
+            <h2>Perfil do Usuário</h2>
+            <p>Nome: <span id="usuario-nome">Carolina Vieira</span></p>
+            <p>E-mail: <span id="usuario-email">carolinavieira@exemplo.com</span></p>
+            <button type="button" type="button" class="btn btn-secondary btn-sm">Editar Perfil</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carolina Vieira</p>
+    </footer>
+    <script rel="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
